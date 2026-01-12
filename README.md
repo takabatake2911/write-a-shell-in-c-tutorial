@@ -3,6 +3,7 @@
 This repository contains a **learning-focused implementation of a minimal Unix shell written in C**, inspired by the tutorial:
 
 > **“Write a Shell in C”** by Stephen Brennan (2015)
+> [https://brennan.io/2015/01/16/write-a-shell-in-c/](https://brennan.io/2015/01/16/write-a-shell-in-c/)
 
 The goal of this project is to gain a deeper understanding of how Unix shells work internally by implementing their fundamental behavior step by step.
 
