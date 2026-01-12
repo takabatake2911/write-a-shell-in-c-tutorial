@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/wait.h>
@@ -21,6 +22,12 @@ char *builtin_str[] = {
     "cd",
     "help",
     "exit",
+};
+
+int (*builtin_func[])(char **) = {
+    &lsh_cd,
+    &lsh_help,
+    &lsh_exit,
 };
 
 int lsh_num_builtins()
@@ -141,7 +148,6 @@ char **lsh_split_line(char *line)
 
 int lsh_execute(char **args)
 {
-    // NOT IMPLEMENTED
 }
 
 int lsh_launch(char **args)
